@@ -14,12 +14,17 @@
 				{
 					"name": "AirShoppingRQ Interline",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -40,12 +45,17 @@
 				{
 					"name": "ItinReshop add passenger",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -60,12 +70,17 @@
 				{
 					"name": "ItinReshop - update segment",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -86,12 +101,17 @@
 				{
 					"name": "AirShoppingRQ Oneway-1ADT-1CHD",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -106,12 +126,17 @@
 				{
 					"name": "FlightPriceRQ Oneway-1ADT-1CHD",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -126,12 +151,17 @@
 				{
 					"name": "OrderCreateRQ Oneway-1ADT-1CHD",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -152,12 +182,17 @@
 				{
 					"name": "OrderCreateRQ Oneway - 1ADT 1CHD_1ServicePerPax",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -185,6 +220,11 @@
 								"key": "Content-Type",
 								"value": "application/xml",
 								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
+								"description": ""
 							}
 						],
 						"body": {
@@ -204,12 +244,17 @@
 				{
 					"name": "AirShoppingRQ Oneway - Recognized",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -224,12 +269,17 @@
 				{
 					"name": "FlightPriceRQ Oneway - Recognized",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -244,12 +294,17 @@
 				{
 					"name": "OrderCreateRQ Oneway - Recognized",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -270,12 +325,17 @@
 				{
 					"name": "OrderCancel",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -296,12 +356,17 @@
 				{
 					"name": "OrderChangeRQ add segment",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -316,12 +381,17 @@
 				{
 					"name": "OrderChangeRQ add service",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -336,12 +406,17 @@
 				{
 					"name": "OrderChange remove service",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -356,12 +431,17 @@
 				{
 					"name": "OrderChangeRQ update segment",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -382,12 +462,17 @@
 				{
 					"name": "OrderCreateRQ Oneway -1ADT",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -408,12 +493,17 @@
 				{
 					"name": "OrderCreate 2Pax 2ServicesForPax1",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -434,12 +524,17 @@
 				{
 					"name": "OrderList",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -460,12 +555,17 @@
 				{
 					"name": "OrderRetrieve",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -486,12 +586,17 @@
 				{
 					"name": "AirShoppingRQ Roundtrip - 2ADT",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -506,12 +611,17 @@
 				{
 					"name": "FlightPriceRQ Roundtrip - 2ADT",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -526,12 +636,17 @@
 				{
 					"name": "OrderCreateRQ Roundtrip - 2ADT",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -552,12 +667,17 @@
 				{
 					"name": "OrderCreateRQ Roundtrip - 2ADT_1ServicePerPax",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -578,12 +698,17 @@
 				{
 					"name": "SeatAvailability",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -604,12 +729,17 @@
 				{
 					"name": "ServiceList Flight",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
@@ -624,12 +754,17 @@
 				{
 					"name": "ServiceList OrderId",
 					"request": {
-						"url": "{{kronos}}",
+						"url": "{{endpointurl}}",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/xml",
+								"description": ""
+							},
+							{
+								"key": "Authorization-Key",
+								"value": "{{myapikey}}",
 								"description": ""
 							}
 						],
