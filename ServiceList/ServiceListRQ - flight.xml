@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceListRQ xmlns="http://www.iata.org/IATA/EDIST" EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2016-08-10T12:39:00Z" Version="IATA2016.2" Target="Test" PrimaryLangID="en" AltLangID="en" RetransmissionIndicator="false" AsynchronousAllowedInd="false" TransactionIdentifier="a" SequenceNmbr="217" xmlns:n2="http://www.w3.org/2001/XMLSchema-instance" n2:schemaLocation="http://www.iata.org/IATA/EDIST file:///Z:/kronosShared/NDC/NDC%20Schemas/16_2%20schemas_EDIST/ServiceListRQ.xsd">
+	<Document>
+		<Name>KRONOS NDC GATEWAY</Name>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+		<Sender>
+			<TravelAgencySender>
+				<Contacts>
+					<Contact>
+						<EmailContact>
+							<Address>ndc@usdtravel.com</Address>
+						</EmailContact>
+					</Contact>
+				</Contacts>
+				<PseudoCity>A4A</PseudoCity>
+				<IATA_Number>98417900</IATA_Number>
+				<AgencyID Owner="C9">C9</AgencyID>
+				<AgentUser>
+					<Name>ksmith</Name>
+					<AgentUserID>ksmith212</AgentUserID>
+					<UserRole>Admin</UserRole>
+				</AgentUser>
+			</TravelAgencySender>
+		</Sender>
+	</Party>
+	<Travelers>
+		<Traveler>
+			<RecognizedTraveler ObjectKey="SH1">
+				<PTC Quantity="9">ADT</PTC>
+				<ResidenceCode>US</ResidenceCode>
+				<Age>
+					<Value UOM="Years">41</Value>
+				</Age>
+				<Name>
+					<Surname>Sutar</Surname>
+					<Given>Pramod</Given>
+					<Middle>R</Middle>
+				</Name>
+				<ProfileID>123</ProfileID>
+				<Gender>Male</Gender>
+				<FQTVs>
+					<AirlineID>C9</AirlineID>
+					<Account>
+						<Number>99222747</Number>
+						<FQTVStatus>SILVER</FQTVStatus>
+					</Account>
+					<ProgramID>Bonus StarMiles</ProgramID>
+				</FQTVs>
+				<Contacts>
+					<Contact>
+						<EmailContact>
+							<Address>Pramod@gmail.com</Address>
+						</EmailContact>
+					</Contact>
+				</Contacts>
+				<Languages>
+					<LanguageCode>en</LanguageCode>
+				</Languages>
+			</RecognizedTraveler>
+		</Traveler>
+		<Traveler>
+			<RecognizedTraveler ObjectKey="SH2">
+				<PTC Quantity="1">ADT</PTC>
+				<ResidenceCode>US</ResidenceCode>
+				<Age>
+					<Value UOM="Years">35</Value>
+				</Age>
+				<Name>
+					<Surname>John</Surname>
+					<Given>Smith</Given>
+					<Middle>R</Middle>
+				</Name>
+				<ProfileID>123</ProfileID>
+				<Gender>Male</Gender>
+				<FQTVs>
+					<AirlineID>C9</AirlineID>
+					<Account>
+						<Number>99422748</Number>
+						<FQTVStatus>GOLD</FQTVStatus>
+					</Account>
+					<ProgramID>Bonus StarMiles</ProgramID>
+				</FQTVs>
+				<Contacts>
+					<Contact>
+						<EmailContact>
+							<Address>john.smith@gmail.com</Address>
+						</EmailContact>
+					</Contact>
+				</Contacts>
+				<Languages>
+					<LanguageCode>en</LanguageCode>
+				</Languages>
+			</RecognizedTraveler>
+		</Traveler>
+	</Travelers>
+	<ShoppingResponseID>
+		<ResponseID>RE02449f6e33534fa3b5dd841a88d07076</ResponseID>
+	</ShoppingResponseID>
+	<Query>
+		<OriginDestination>
+			<Flight>
+			 <Departure>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22</Date>
+                    <Time>08:00</Time>
+                    <AirportName>Heathrow Airport</AirportName>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BCN</AirportCode>
+                    <Date>2017-08-22</Date>
+                    <Time>10:59</Time>
+                    <AirportName>Barcelona–El Prat Airport</AirportName>
+                </Arrival>
+                <MarketingCarrier>
+                    <AirlineID>C9</AirlineID>
+                    <FlightNumber>070</FlightNumber>
+                </MarketingCarrier>
+                <OperatingCarrier>
+                    <AirlineID>C9</AirlineID>
+                    <FlightNumber>070</FlightNumber>
+                </OperatingCarrier>
+				<ClassOfService>
+					<Code>C</Code>
+				</ClassOfService>
+			</Flight>
+		</OriginDestination>
+	</Query>
+</ServiceListRQ>

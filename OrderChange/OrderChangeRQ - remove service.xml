@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderChangeRQ  xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-11-02T12:39:00Z" 
+Version="IATA2016.2" Target="Test" PrimaryLangID="en" AltLangID="en" RetransmissionIndicator="false" AsynchronousAllowedInd="false" 
+TransactionIdentifier="3d9cc571a87a45f69f7f783bfabe44fd" SequenceNmbr="101">
+	<Document>
+		<Name>IATA NDC SANDBOX</Name>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+		<Sender>
+			<TravelAgencySender>
+				<Name>test agent</Name>
+				<Type>TravelAgency</Type>
+				<Contacts>
+					<Contact>
+						<EmailContact>
+							<Address>ndc@usdtravel.com</Address>
+						</EmailContact>
+					</Contact>
+				</Contacts>
+				<PseudoCity>1F8</PseudoCity>
+				<IATA_Number>35200421</IATA_Number>
+				<AgencyID>test agent</AgencyID>
+				<AgentUser>
+					<Name>John Smith</Name>
+					<AgentUserID>1980</AgentUserID>
+					<UserRole>Admin</UserRole>
+				</AgentUser>
+			</TravelAgencySender>
+		</Sender>
+		<Participants xsi:nil="true"/>
+		<Recipient>
+			<MarketingCarrierRecipient>
+				<AirlineID>C9</AirlineID>
+			</MarketingCarrierRecipient>
+		</Recipient>
+	</Party>
+	<Query>
+		<Passengers>
+			<Passenger ObjectKey="PAX1">
+				<PTC Quantity="1">ADT</PTC>
+				<Name>
+					<Surname>Sutar</Surname>
+                    <Given>Pramod</Given>
+                    <Middle>R</Middle>
+				</Name>
+				<ProfileID>191196061518881</ProfileID>
+				<Gender>Male</Gender>
+			</Passenger>
+		</Passengers>
+		<Order>
+			<OrderID Owner="C9">A12345Q78</OrderID>
+			<OrderItems>
+				<OrderItem>
+					<OrderItemID ObjectKey="ID1" Owner="C9">1_1</OrderItemID>
+					<Associations>
+						<Passengers>
+							<PassengerReferences>PAX1</PassengerReferences> 								
+						</Passengers>	
+						<Services>
+							<ServiceID Owner="C9">SV_1010_EFO</ServiceID>
+						</Services>
+					</Associations>
+					<ActionType Context="Service">Delete</ActionType>
+				</OrderItem>
+			</OrderItems>
+		</Order>
+		<Payments>
+			<Payment>
+				<Method>
+					<Cash CashInd="true"/>
+				</Method>
+				<Amount Code="USD">-35.00</Amount>
+				<Associations>
+					<OfferItemSets>
+						<OfferItemSetRefs>ID1</OfferItemSetRefs>
+					</OfferItemSets>
+				</Associations>
+			</Payment>
+		</Payments>
+		<OrderChangeMetadata>
+			<Other>
+				<OtherMetadata>
+					<CurrencyMetadatas>
+						<CurrencyMetadata MetadataKey="USD">
+						</CurrencyMetadata>
+					</CurrencyMetadatas>
+				</OtherMetadata>
+			</Other>
+		</OrderChangeMetadata>
+	</Query>
+	<DataLists>
+		<FlightSegmentList>
+			<FlightSegment SegmentKey="SEG_LHRBCN_1">
+				<Departure>
+                        <AirportCode>LHR</AirportCode>
+                        <Date>2017-08-22</Date>
+                        <Time>08:00</Time>
+                        <AirportName>Heathrow Airport</AirportName>
+                    </Departure>
+                    <Arrival>
+                        <AirportCode>BCN</AirportCode>
+                        <Date>2017-08-22</Date>
+                        <Time>10:59</Time>
+                        <AirportName>Barcelona?El Prat Airport</AirportName>
+                    </Arrival>
+                    <MarketingCarrier>
+                        <AirlineID>C9</AirlineID>
+                        <FlightNumber>070</FlightNumber>
+                    </MarketingCarrier>
+			</FlightSegment>
+		</FlightSegmentList>
+		<FlightList>
+			<Flight FlightKey="FL_LHRBCN_1">
+				<Journey>
+					<Time>P0DT1H59M0S</Time>
+				</Journey>
+				<SegmentReferences>SEG_LHRBCN_1</SegmentReferences>
+			</Flight>
+		</FlightList>
+		<OriginDestinationList>
+			<OriginDestination OriginDestinationKey="OD1">
+				<DepartureCode>LHR</DepartureCode>
+				<ArrivalCode>BCN</ArrivalCode>
+				<FlightReferences>FL_LHRBCN_1</FlightReferences>
+			</OriginDestination>
+		</OriginDestinationList>
+		<ServiceList>
+			<Service ObjectKey="SV_1010_EFO">
+				<ServiceID Owner="C9">1010</ServiceID>
+				<Name>2nd Bag</Name>
+				<Encoding>
+					<RFIC>
+						<Code>M</Code>
+					</RFIC>
+					<Code>XBAG</Code>
+				</Encoding>
+				<Descriptions>
+					<Description>
+						<Text>Second bag</Text>
+						<Media>
+							<MediaLink>LHB02.png</MediaLink>
+						</Media>
+					</Description>
+				</Descriptions>
+				<Settlement>
+					<Method>
+						<Code>EF</Code>
+						<Definition>EMD Standalone</Definition>
+					</Method>
+				</Settlement>
+				<Price>
+					<Total Code="USD" Taxable="false">35.00</Total>
+					<PassengerReferences>PAX1</PassengerReferences>
+				</Price>
+				<Associations>
+					<Traveler>
+						<TravelerReferences>PAX1</TravelerReferences>
+					</Traveler>
+					<Flight>
+						<SegmentReferences>SEG_LHRBCN_1</SegmentReferences>
+					</Flight>
+					<Offer>
+						<OfferReferences>ID1</OfferReferences>
+					</Offer>
+				</Associations>
+			</Service>
+		</ServiceList>
+	</DataLists>
+</OrderChangeRQ>

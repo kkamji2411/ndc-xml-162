@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlightPriceRQ xmlns="http://www.iata.org/IATA/EDIST" EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2016-03-31T00:00:00.000+03:00" Version="IATA2016.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/EDIST file:///C:/Users/k.dimitraki/Desktop/16_2%20schemas_EDIST/FlightPriceRQ.xsd">
+	<Document>
+		<Name>kronos NDC GATEWAY</Name>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+		<Sender>
+			<TravelAgencySender>
+				<Name>JR TECHNOLOGIES</Name>
+				<IATA_Number>20200154</IATA_Number>
+				<AgencyID>00010080</AgencyID>
+			</TravelAgencySender>
+		</Sender>
+		<Recipient>
+			<ORA_Recipient>
+				<AirlineID>C9</AirlineID>
+			</ORA_Recipient>
+		</Recipient>
+	</Party>
+	<Travelers>
+		<Traveler>
+			<RecognizedTraveler ObjectKey="SH1">
+				<PTC Quantity="9">ADT</PTC>
+				<ResidenceCode>US</ResidenceCode>
+				<Age>
+					<Value UOM="Years">41</Value>
+				</Age>
+				<Name>
+					<Surname>Sutar</Surname>
+					<Given>Pramod</Given>
+					<Middle>R</Middle>
+				</Name>
+				<ProfileID>123</ProfileID>
+				<Gender>Male</Gender>
+				<FQTVs>
+					<AirlineID>C9</AirlineID>
+					<Account>
+						<Number>99222747</Number>
+					</Account>
+					<ProgramID>Bonus StarMiles</ProgramID>
+				</FQTVs>
+				<Contacts>
+					<Contact>
+						<EmailContact>
+							<Address>Pramod@gmail.com</Address>
+						</EmailContact>
+					</Contact>
+				</Contacts>
+				<Languages>
+					<LanguageCode>en</LanguageCode>
+				</Languages>
+			</RecognizedTraveler>
+		</Traveler>
+	</Travelers>
+	<Query>
+		<OriginDestination>
+			<Flight>
+				<Departure>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22</Date>
+                    <Time>08:00</Time>
+                    <AirportName>Heathrow Airport</AirportName>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BCN</AirportCode>
+                    <Date>2017-08-22</Date>
+                    <Time>10:59</Time>
+                    <AirportName>Barcelona–El Prat Airport</AirportName>
+                </Arrival>
+                <MarketingCarrier>
+                    <AirlineID>C9</AirlineID>
+                    <FlightNumber>070</FlightNumber>
+                </MarketingCarrier>
+                <OperatingCarrier>
+                    <AirlineID>C9</AirlineID>
+                    <FlightNumber>070</FlightNumber>
+                </OperatingCarrier>
+				<ClassOfService>
+				<Code>M</Code>
+				</ClassOfService>
+			</Flight>
+		</OriginDestination>
+	</Query>
+	<Metadata>
+		<Other>
+			<OtherMetadata>
+				<LanguageMetadatas>
+					<LanguageMetadata MetadataKey="Display">
+						<Application>Display</Application>
+						<Code_ISO>en</Code_ISO>
+					</LanguageMetadata>
+				</LanguageMetadatas>
+			</OtherMetadata>
+		</Other>
+	</Metadata>
+</FlightPriceRQ>
