@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderChangeRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
+	<Document>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+        <Sender>
+			<TravelAgencySender>
+				<Name>JR TECHNOLOGIES</Name>
+				<IATA_Number>20200154</IATA_Number>
+				<AgencyID>00010080</AgencyID>
+			</TravelAgencySender>
+		</Sender>
+	</Party>
+	<Query>
+		<Passengers>
+			<Passenger ObjectKey="SH1">
+				<PTC Quantity="1">CHD</PTC>
+				<Name>
+					<Surname>Patel</Surname>
+					<Given>Rudradaki</Given>
+				</Name>
+				<Contacts>
+					<Contact>
+						<EmailContact>
+							<Address>Pramodatsi@gmail.com</Address>
+						</EmailContact>
+					</Contact>
+				</Contacts>
+				<Gender>Male</Gender>
+			</Passenger>
+		</Passengers>
+		<Order>
+			<OrderID Owner="C9">D12AR5</OrderID>
+			<Associations>
+				<Passengers>
+					<PassengerReferences>SH1</PassengerReferences>
+				</Passengers>
+			</Associations>
+			<Details>
+				<ShoppingResponse>
+					<Owner>C9</Owner>
+					<ResponseID>a56a60bffaf4457786aa839900bec6c2</ResponseID>
+					<OfferItems>
+						<OfferItem>
+							<OfferItemID Owner="C9">2_1</OfferItemID>
+						</OfferItem>
+					</OfferItems>
+				</ShoppingResponse>
+			</Details>
+			<ActionType Context="Passenger">Create</ActionType>
+			<OrderItems>
+				<OrderItem>
+					<OrderItemID Owner="C9">_</OrderItemID>
+				</OrderItem>
+			</OrderItems>
+		</Order>
+		<Payments>
+			<Payment>
+				<Method>
+					<Cash/>
+				</Method>
+				<Amount Code="USD">196.69</Amount>
+			</Payment>
+		</Payments>
+	</Query>
+</OrderChangeRQ>

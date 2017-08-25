@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ItinReshopRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
+	<Document>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+		<Sender>
+			<TravelAgencySender>
+				<Name>JR TECHNOLOGIES</Name>
+				<IATA_Number>20200154</IATA_Number>
+				<AgencyID>00010080</AgencyID>
+			</TravelAgencySender>
+		</Sender>
+	</Party>
+	<Query>
+		<Reshop>
+			<Actions>
+				<ActionType Context="Passenger">Create</ActionType>
+				<OrderID Owner="C9">D12XK5</OrderID>
+				<Passengers>
+					<Passenger ObjectKey="PAX3">
+						<PTC Quantity="1">CHD</PTC>
+						<Name>
+							<Surname>Patel</Surname>
+							<Given>Mira</Given>
+						</Name>
+						<Contacts>
+							<Contact>
+								<EmailContact>
+									<Address>Mira@gmail.com</Address>
+								</EmailContact>
+							</Contact>
+						</Contacts>
+						<Gender>Male</Gender>
+					</Passenger>
+				</Passengers>
+				<Preference>
+					<CabinPreferences>
+						<CabinType>
+							<Code>M</Code>
+						</CabinType>
+					</CabinPreferences>
+				</Preference>
+			</Actions>
+		</Reshop>
+	</Query>
+</ItinReshopRQ>

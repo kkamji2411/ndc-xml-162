@@ -19,37 +19,12 @@
 	</Party>
 	<Travelers>
 		<Traveler>
-			<RecognizedTraveler ObjectKey="SH1">
-				<PTC Quantity="9">ADT</PTC>
-				<ResidenceCode>US</ResidenceCode>
-				<Age>
-					<Value UOM="Years">41</Value>
-				</Age>
-				<Name>
-					<Surname>Sutar</Surname>
-					<Given>Pramod</Given>
-					<Middle>R</Middle>
-				</Name>
-				<ProfileID>123</ProfileID>
-				<Gender>Male</Gender>
-				<FQTVs>
-					<AirlineID>C9</AirlineID>
-					<Account>
-						<Number>99222747</Number>
-					</Account>
-					<ProgramID>Bonus StarMiles</ProgramID>
-				</FQTVs>
-				<Contacts>
-					<Contact>
-						<EmailContact>
-							<Address>Pramod@gmail.com</Address>
-						</EmailContact>
-					</Contact>
-				</Contacts>
-				<Languages>
-					<LanguageCode>en</LanguageCode>
-				</Languages>
-			</RecognizedTraveler>
+			<AnonymousTraveler>
+				<PTC Quantity="1">ADT</PTC>
+			</AnonymousTraveler>
+			<AnonymousTraveler>
+				<PTC Quantity="1">CHD</PTC>
+			</AnonymousTraveler>
 		</Traveler>
 	</Travelers>
 	<CoreQuery>
@@ -64,7 +39,23 @@
 				</Arrival>
 				<MarketingCarrierAirline>
 					<AirlineID>C9</AirlineID>
+					<Name>Kronos</Name>
 				</MarketingCarrierAirline>
+				<CalendarDates DaysAfter="3" DaysBefore="3"/>
+			</OriginDestination>
+			<OriginDestination>
+				<Departure>
+					<AirportCode>BCN</AirportCode>
+					<Date>2017-08-30</Date>
+				</Departure>
+				<Arrival>
+					<AirportCode>LHR</AirportCode>
+				</Arrival>
+				<MarketingCarrierAirline>
+					<AirlineID>C9</AirlineID>
+					<Name>Kronos</Name>
+				</MarketingCarrierAirline>
+				<CalendarDates DaysAfter="3" DaysBefore="3"/>
 			</OriginDestination>
 		</OriginDestinations>
 	</CoreQuery>
@@ -80,4 +71,23 @@
 			</CabinType>
 		</CabinPreferences>
 	</Preference>
+	<Metadata>
+		<Other>
+			<OtherMetadata>
+				<CurrencyMetadatas>
+					<CurrencyMetadata MetadataKey="USD">
+						<Decimals>2</Decimals>
+					</CurrencyMetadata>
+				</CurrencyMetadatas>
+			</OtherMetadata>
+			<OtherMetadata>
+				<LanguageMetadatas>
+					<LanguageMetadata MetadataKey="Display">
+						<Application>Display</Application>
+						<Code_ISO>en</Code_ISO>
+					</LanguageMetadata>
+				</LanguageMetadatas>
+			</OtherMetadata>
+		</Other>
+	</Metadata>
 </AirShoppingRQ>

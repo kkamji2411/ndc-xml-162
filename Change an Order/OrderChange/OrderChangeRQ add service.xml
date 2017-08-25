@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderChangeRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
+	<Document>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+		<Sender>
+			<TravelAgencySender>
+				<Name>JR TECHNOLOGIES</Name>
+				<IATA_Number>20200154</IATA_Number>
+				<AgencyID>00010080</AgencyID>
+			</TravelAgencySender>
+		</Sender>
+	</Party>
+	<Query>
+		<Order>
+			<OrderID Owner="C9">D12CW5</OrderID>
+			<ActionType Context="Service">Create</ActionType>
+			<OrderItems>
+				<!-- Existing OrderItems of the ADT -->
+				<OrderItem>
+					<OrderItemID Owner="C9">ORDERITEM1</OrderItemID>
+					<Associations>
+						<Passengers>
+							<PassengerReferences>SH1</PassengerReferences>
+						</Passengers>
+						<Flight>
+							<SegmentReferences>SEG_CDGBCN_1</SegmentReferences>
+						</Flight>
+						<Services>
+							<ServiceID refs="SV_1010_EFO" Owner="C9">1010</ServiceID>
+						</Services>
+					</Associations>
+				</OrderItem>
+			</OrderItems>
+		</Order>
+		<Payments>
+			<Payment>
+				<Method>
+					<Cash CashInd="true"/>
+				</Method>
+				<!-- Amount for the service -->
+				<Amount Code="USD">35.00</Amount>
+			</Payment>
+		</Payments>
+	</Query>
+	<DataLists>
+	 <RecognizedTravelerList>
+            <RecognizedTraveler ObjectKey="SH1">
+                <PTC>ADT</PTC>
+                <Name>
+                    <Surname>Sutarx</Surname>
+                    <Given>Pramodx</Given>
+                    <Middle>R</Middle>
+                </Name>
+                <Gender>Male</Gender>
+                <Contacts>
+                    <Contact>
+                        <EmailContact>
+                            <Address>Pramozd@gmail.com</Address>
+                        </EmailContact>
+                    </Contact>
+                </Contacts>
+            </RecognizedTraveler>
+        </RecognizedTravelerList>
+		<FlightSegmentList>
+			<FlightSegment SegmentKey="SEG_CDGBCN_1">
+				<Departure>
+					<AirportCode>CDG</AirportCode>
+					<Date>2017-08-22</Date>
+  				</Departure>
+				<Arrival>
+					<AirportCode>BCN</AirportCode>
+ 				</Arrival>
+				<MarketingCarrier>
+					<AirlineID>C9</AirlineID>
+					<FlightNumber>052</FlightNumber>
+				</MarketingCarrier>
+			</FlightSegment>
+		</FlightSegmentList>
+		<ServiceList>
+			<Service ObjectKey="SV_1010_EFO">
+                <ServiceID Owner="C9">1010</ServiceID>
+                <Name>2nd Bag</Name>
+                <Encoding>
+                    <Code>BAG</Code>
+                </Encoding>
+                <Descriptions>
+                    <Description>
+                        <Text>Second bag</Text>
+                    </Description>
+                </Descriptions>
+                <Price>
+                    <Total>35.00</Total>
+                    <PassengerReferences>SH1</PassengerReferences>
+                </Price>
+                <Associations>
+                    <Traveler>
+                        <TravelerReferences>SH1</TravelerReferences>
+                    </Traveler>
+                    <Flight>
+                        <SegmentReferences>SEG_CDGBCN_1</SegmentReferences>
+                    </Flight>
+                </Associations>
+            </Service>
+		</ServiceList>
+	</DataLists>
+</OrderChangeRQ>

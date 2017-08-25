@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AirShoppingRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
+<AirShoppingRQ EchoToken="interlineTest{{$guid}}" Version="IATA2016.2" TransactionIdentifier="TRN12345" Target="Test" xmlns="http://www.iata.org/IATA/EDIST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Document>
 		<ReferenceVersion>1.0</ReferenceVersion>
 	</Document>
@@ -19,37 +19,9 @@
 	</Party>
 	<Travelers>
 		<Traveler>
-			<RecognizedTraveler ObjectKey="SH1">
-				<PTC Quantity="9">ADT</PTC>
-				<ResidenceCode>US</ResidenceCode>
-				<Age>
-					<Value UOM="Years">41</Value>
-				</Age>
-				<Name>
-					<Surname>Sutar</Surname>
-					<Given>Pramod</Given>
-					<Middle>R</Middle>
-				</Name>
-				<ProfileID>123</ProfileID>
-				<Gender>Male</Gender>
-				<FQTVs>
-					<AirlineID>C9</AirlineID>
-					<Account>
-						<Number>99222747</Number>
-					</Account>
-					<ProgramID>Bonus StarMiles</ProgramID>
-				</FQTVs>
-				<Contacts>
-					<Contact>
-						<EmailContact>
-							<Address>Pramod@gmail.com</Address>
-						</EmailContact>
-					</Contact>
-				</Contacts>
-				<Languages>
-					<LanguageCode>en</LanguageCode>
-				</Languages>
-			</RecognizedTraveler>
+			<AnonymousTraveler>
+				<PTC Quantity="1">ADT</PTC>
+			</AnonymousTraveler>
 		</Traveler>
 	</Travelers>
 	<CoreQuery>
@@ -60,10 +32,24 @@
 					<Date>2017-08-29</Date>
 				</Departure>
 				<Arrival>
-					<AirportCode>BCN</AirportCode>
+					<AirportCode>DXB</AirportCode>
 				</Arrival>
 				<MarketingCarrierAirline>
 					<AirlineID>C9</AirlineID>
+					<Name>Kronos</Name>
+				</MarketingCarrierAirline>
+			</OriginDestination>
+			<OriginDestination>
+				<Departure>
+					<AirportCode>DXB</AirportCode>
+					<Date>2017-08-29</Date>
+				</Departure>
+				<Arrival>
+					<AirportCode>LHR</AirportCode>
+				</Arrival>
+				<MarketingCarrierAirline>
+					<AirlineID>C9</AirlineID>
+					<Name>Kronos</Name>
 				</MarketingCarrierAirline>
 			</OriginDestination>
 		</OriginDestinations>

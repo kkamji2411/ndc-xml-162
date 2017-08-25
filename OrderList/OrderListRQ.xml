@@ -1,81 +1,733 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<OrderListRQ EchoToken="8fdb1c621a7a4454aa3360556e7784d5" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
-	<Document>
-		<Name>NDC-Gateway</Name>
-		<ReferenceVersion>1.0</ReferenceVersion>
-	</Document>
-	<Party>
-		<Sender>
-			<TravelAgencySender>
-				<Name>test agent</Name>
-				<Type>TravelAgency</Type>
-				<Contacts>
-					<Contact>
-						<EmailContact>
-							<Address>ndc@usdtravel.com</Address>
-						</EmailContact>
-					</Contact>
-				</Contacts>
-				<PseudoCity>1F8</PseudoCity>
-				<IATA_Number>35200421</IATA_Number>
-				<AgencyID>C9</AgencyID>
-				<AgentUser>
-					<Name>John Smith</Name>
-					<AgentUserID>1980</AgentUserID>
-					<UserRole>Admin</UserRole>
-				</AgentUser>
-			</TravelAgencySender>
-		</Sender>
-		<Recipient>
-			<MarketingCarrierRecipient>
-				<AirlineID>C9</AirlineID>
-			</MarketingCarrierRecipient>
-		</Recipient>
-	</Party>
-	<Query>
-		<Filters>
-			<!--<Agency>-->
-			<!--	<AgencyID>C9</AgencyID>-->
-			<!--	<Name>TestAgency</Name>-->
-			<!--	<IATA_Number>98417900</IATA_Number>-->
-			<!--</Agency>-->
-			<!--<Airline>-->
-			<!--	<AirlineID>C9</AirlineID>-->
-			<!--</Airline>-->
-			<!--<BookingReferences>-->
-			<!--	<BookingReference>-->
-			<!--		<ID>3706CE</ID>-->
-			<!--		<AirlineID>C9</AirlineID>-->
-			<!--	</BookingReference>-->
-			<!--</BookingReferences>-->
-			<CreateDateRange>
-				<Effective>2017-02-01</Effective>
-				<Expiration>2017-08-25</Expiration>
-			</CreateDateRange>
-			<!--<Flight>-->
-				<!--<Departure>-->
-				<!--	<AirportCode>CDG</AirportCode>-->
-				<!--	<Date>2017-01-01</Date>-->
-				<!--</Departure>-->
-				<!--<Arrival>-->
-				<!--	<AirportCode>LHR</AirportCode>-->
-				<!--	<Date>2016-12-27</Date>-->
-				<!--</Arrival>-->
-				<!--<FlightNumber>024</FlightNumber>-->
-			<!--</Flight>-->
-			<!--<Passengers>-->
-			<!--	<Name>-->
-			<!--		<Surname>Tsourdos</Surname>-->
-			<!--	</Name>-->
-			<!--	<EmailAddress>-->
-			<!--		<Address>tryvoid@random.com</Address>-->
-			<!--	</EmailAddress>-->
-			<!--	<ProfileID>191195976776238</ProfileID>-->
-			<!--</Passengers>-->
-			<!--<TravelDateRange>-->
-				<!--<Effective>2016-12-27</Effective>-->
-			<!--	<Expiration>2016-12-27</Expiration>-->
-			<!--</TravelDateRange>-->
-		</Filters>
-	</Query>
-</OrderListRQ>
+<OrderListRS TimeStamp="2017-08-25T05:23:34.952Z" Version="IATA2016.2" TransactionIdentifier="d25471c6c66f40ab868ac72ed5c297ab" xmlns="http://www.iata.org/IATA/EDIST">
+    <Document>
+        <Name>KRONOS NDC GATEWAY</Name>
+        <ReferenceVersion>20170823_104732</ReferenceVersion>
+    </Document>
+    <Success/>
+    <Response>
+        <OrderListProcessing/>
+        <Orders>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>DXB</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WX8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-16Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>PRG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345W78</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-23Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-30Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>FRA</AirportCode>
+                    <Date>2017-08-30Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345Y98</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>PRG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WZ8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-16Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345W98</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-23Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-30Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>FRA</AirportCode>
+                    <Date>2017-08-30Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345YA8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-16Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>PRG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WA8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-16Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BCN</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WC8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-24Z</CreationDate>
+                <Departure>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-29Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BCN</AirportCode>
+                    <Date>2017-08-29Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutar Pramod</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345YE8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BCN</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WH8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BCN</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WJ8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>DXB</AirportCode>
+                    <Date>2017-08-23Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WL8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>PRG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WN8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>PRG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WP8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>DXB</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345X18</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>PRG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WR8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345X38</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WT8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-22Z</CreationDate>
+                <Departure>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-29Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BCN</AirportCode>
+                    <Date>2017-08-29Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345Y58</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BCN</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WV8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>DXB</AirportCode>
+                    <Date>2017-08-23Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345X78</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-23Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-30Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>MUC</AirportCode>
+                    <Date>2017-08-30Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345Y78</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-16Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345W88</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WW8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>DXB</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345X88</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WY8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-23Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-30Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>MUC</AirportCode>
+                    <Date>2017-08-30Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345YB8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-16Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>DXB</AirportCode>
+                    <Date>2017-08-23Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WB8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-16Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>PRG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WD8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WF8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WG8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>DXB</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WK8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WM8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BCN</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WQ8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>PRG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345X28</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>DXB</AirportCode>
+                    <Date>2017-08-23Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WS8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>DXB</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345X48</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-23Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-30Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>FRA</AirportCode>
+                    <Date>2017-08-30Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345Y88</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>LHR</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345WU8</OrderID>
+            </Order>
+            <Order>
+                <Agency>
+                    <AgencyID>20200154</AgencyID>
+                </Agency>
+                <CreationDate>2017-08-17Z</CreationDate>
+                <Departure>
+                    <AirportCode>CDG</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Departure>
+                <Arrival>
+                    <AirportCode>BCN</AirportCode>
+                    <Date>2017-08-22Z</Date>
+                </Arrival>
+                <Passengers>
+                    <FullName>Sutarx Pramodx</FullName>
+                </Passengers>
+                <OrderID xsi:type="ns3:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns3="http://www.w3.org/2001/XMLSchema">A12345X68</OrderID>
+            </Order>
+        </Orders>
+    </Response>
+</OrderListRS>

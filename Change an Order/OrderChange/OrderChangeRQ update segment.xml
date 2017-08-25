@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderChangeRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
+	<Document>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+        <Sender>
+			<TravelAgencySender>
+				<Name>JR TECHNOLOGIES</Name>
+				<IATA_Number>20200154</IATA_Number>
+				<AgencyID>00010080</AgencyID>
+			</TravelAgencySender>
+		</Sender>
+	</Party>
+	<Query>
+		<Order>
+			<OrderID Owner="C9">D12CW5</OrderID>
+			<Details>
+				<ShoppingResponse>
+					<Owner>C9</Owner>
+					<ResponseID>107-d5ba9df63ea24cbb8b5f23ff9aba01c9</ResponseID>
+					<OfferItems>
+						<OfferItem>
+							<OfferItemID Owner="C9">6_1</OfferItemID>
+						</OfferItem>
+					</OfferItems>
+				</ShoppingResponse>
+			</Details>
+			<ActionType Context="Segment">Create</ActionType>
+			<OrderItems>
+				<OrderItem>
+					<OrderItemID Owner="C9">ORDERITEM1</OrderItemID>
+					<ActionType Context="Segment">Delete</ActionType>
+				</OrderItem>
+			</OrderItems>
+		</Order>
+		<Payments>
+			<Payment>
+				<Method>
+					<Cash/>
+				</Method>
+				<Amount Code="USD">1108.69</Amount>
+			</Payment>
+		</Payments>
+	</Query>
+</OrderChangeRQ>

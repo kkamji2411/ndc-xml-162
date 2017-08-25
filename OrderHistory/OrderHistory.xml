@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<OrderRetrieveRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
-	<Document>
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderHistoryRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
+ 	<Document>
 		<ReferenceVersion>1.0</ReferenceVersion>
 	</Document>
 	<Party>
@@ -18,8 +18,6 @@
 		</Recipient>
 	</Party>
 	<Query>
-		<Filters>
-			<OrderID Owner="C9">D12XN5</OrderID>
-		</Filters>
+		<OrderID Owner="C9">D12XN5</OrderID>
 	</Query>
-</OrderRetrieveRQ>
+</OrderHistoryRQ>

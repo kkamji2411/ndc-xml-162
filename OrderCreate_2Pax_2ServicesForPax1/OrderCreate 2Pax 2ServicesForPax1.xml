@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OrderCreateRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
+	<Document>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+		<Sender>
+			<TravelAgencySender>
+				<Name>JR TECHNOLOGIES</Name>
+				<IATA_Number>20200154</IATA_Number>
+				<AgencyID>00010080</AgencyID>
+			</TravelAgencySender>
+		</Sender>
+		<Recipient>
+			<ORA_Recipient>
+				<AirlineID>C9</AirlineID>
+			</ORA_Recipient>
+		</Recipient>
+	</Party>
+	<Query>
+		<Passengers>
+			<Passenger ObjectKey="SH1">
+				<PTC Quantity="1">ADT</PTC>
+				<Name>
+					<Surname>Sutar</Surname>
+					<Given>Pramod</Given>
+					<SurnameSuffix>Sr</SurnameSuffix>
+					<Middle>R</Middle>
+				</Name>
+				<Contacts>
+					<Contact>
+						<AddressContact>
+							<Street>Parsik Road</Street>
+							<CityName>BOM</CityName>
+							<PostalCode>400605</PostalCode>
+							<County>IN</County>
+						</AddressContact>
+						<EmailContact>
+							<Address>Pramod@gmail.com</Address>
+						</EmailContact>
+						<OtherContactMethod>
+							<Name>Mobile</Name>
+							<Value>1234567890</Value>
+						</OtherContactMethod>
+						<PhoneContact>
+							<Number CountryCode="91">9664597377</Number>
+						</PhoneContact>
+					</Contact>
+				</Contacts>
+				<Gender>Male</Gender>
+			</Passenger>
+			<Passenger ObjectKey="SH2">
+				<PTC Quantity="1">CHD</PTC>
+				<Name>
+					<Surname>Suri</Surname>
+					<Given>Cruise</Given>
+					<SurnameSuffix>Mrs</SurnameSuffix>
+					<Middle>R</Middle>
+				</Name>
+				<Contacts>
+					<Contact>
+						<AddressContact>
+							<Street>Parsik Road</Street>
+							<CityName>BOM</CityName>
+							<PostalCode>400605</PostalCode>
+							<County>IN</County>
+						</AddressContact>
+						<EmailContact>
+							<Address>suri.cruise@gmail.com</Address>
+						</EmailContact>
+						<OtherContactMethod>
+							<Name>Mobile</Name>
+							<Value>1234567890</Value>
+						</OtherContactMethod>
+						<PhoneContact>
+							<Number CountryCode="91">9664597377</Number>
+						</PhoneContact>
+					</Contact>
+				</Contacts>
+				<Gender>Female</Gender>
+			</Passenger>
+		</Passengers>
+		<OrderItems>
+			<ShoppingResponse>
+				<Owner>C9</Owner>
+				<ResponseID>201-8c13124bc4754a2baa54224cbbf080c5</ResponseID>
+				<Offers>
+					<Offer>
+						<OfferID Owner="C9">143</OfferID>
+						<OfferItems>
+							<OfferItem>
+								<OfferItemID ObjectKey="ID1" Owner="C9">143_1</OfferItemID>
+								<Passengers>
+									<PassengerReference>SH2</PassengerReference>
+								</Passengers>
+							</OfferItem>
+							<OfferItem>
+								<OfferItemID ObjectKey="ID2" Owner="C9">143_2</OfferItemID>
+								<Passengers>
+									<PassengerReference>SH1</PassengerReference>
+								</Passengers>
+								<AssociatedServices>
+                                    <AssociatedService refs="SV_1014_ERO"/>
+                                    <AssociatedService refs="SV_1009_ERO"/>
+                                </AssociatedServices>
+							</OfferItem>
+						</OfferItems>
+						<TotalPrice>
+							<SimpleCurrencyPrice Code="EUR">445.39</SimpleCurrencyPrice>
+						</TotalPrice>
+					</Offer>
+				</Offers>
+			</ShoppingResponse>
+		</OrderItems>
+		<Payments>
+			<Payment>
+				<Method>
+					<PaymentCard>
+						<CardType>CREDIT</CardType>
+						<CardCode>VI</CardCode>
+						<CardNumber>1111222233334444</CardNumber>
+						<SeriesCode>584</SeriesCode>
+						<CardHolderName>WERNHER VON BRAUN</CardHolderName>
+						<EffectiveExpireDate>
+							<Effective>0322</Effective>
+							<Expiration>1022</Expiration>
+						</EffectiveExpireDate>
+					</PaymentCard>
+				</Method>
+				<Amount Taxable="true" Code="EUR">445.39</Amount>
+				<Payer>
+					<Name>
+						<Surname>Patel</Surname>
+						<Given>Ramesh</Given>
+					</Name>
+					<Contacts>
+						<Contact>
+							<AddressContact>
+								<Street>22 Main Street</Street>
+								<CityName>FRA</CityName>
+								<PostalCode>14201</PostalCode>
+								<CountryCode>DE</CountryCode>
+							</AddressContact>
+							<EmailContact>
+								<Address>ramesh@kronos.com</Address>
+							</EmailContact>
+						</Contact>
+					</Contacts>
+				</Payer>
+			</Payment>
+		</Payments>
+		<DataLists>
+			<FlightSegmentList>
+				<FlightSegment SegmentKey="SEG_LHRBCN_4">
+					<Departure>
+	                    <AirportCode>LHR</AirportCode>
+	                    <Date>2017-08-29</Date>
+                	</Departure>
+	                <Arrival>
+	                    <AirportCode>BCN</AirportCode>
+	                </Arrival>
+	                <MarketingCarrier>
+	                    <AirlineID>C9</AirlineID>
+	                    <FlightNumber>076</FlightNumber>
+	                </MarketingCarrier>
+				</FlightSegment>
+			</FlightSegmentList>
+			<ServiceList>
+				<Service ObjectKey="SV_1014_ERO">
+                <ServiceID Owner="C9">1014</ServiceID>
+                <Name>Advanced seat selection</Name>
+                <Descriptions>
+                    <Description>
+                        <Text>A convenient option that lets you reserve your preferred seat</Text>
+                    </Description>
+                </Descriptions>
+                <Associations>
+                    <Traveler>
+                        <TravelerReferences>SH2 SH1</TravelerReferences>
+                    </Traveler>
+                </Associations>
+            </Service>
+				<Service ObjectKey="SV_1009_ERO">
+                <ServiceID Owner="C9">1009</ServiceID>
+                <Name>Inflight Wi-Fi</Name>
+                <Descriptions>
+                    <Description>
+                        <Text>Stay connected using any Wi-Fi enabled device</Text>
+                    </Description>
+                </Descriptions>
+                <Associations>
+                    <Traveler>
+                        <TravelerReferences>SH2 SH1</TravelerReferences>
+                    </Traveler>
+                </Associations>
+            </Service>
+			</ServiceList>
+		</DataLists>
+	</Query>
+</OrderCreateRQ>

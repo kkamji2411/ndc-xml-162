@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ItinReshopRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
+	<Document>
+		<ReferenceVersion>1.0</ReferenceVersion>
+	</Document>
+	<Party>
+		<Sender>
+			<TravelAgencySender>
+				<Name>JR TECHNOLOGIES</Name>
+				<IATA_Number>20200154</IATA_Number>
+				<AgencyID>00010080</AgencyID>
+			</TravelAgencySender>
+		</Sender>
+	</Party>
+	<Query>
+		<Reshop>
+			<Actions>
+				<ActionType Context="Segment">Create</ActionType>
+				<OrderID Owner="C9">D12XK5</OrderID>
+				<OrderItems>
+					<OrderItem>
+						<OrderItemID Owner="C9">ORDERITEM1</OrderItemID>
+						<FlightItem>
+							<OriginDestination>
+								<Flight>
+									<Departure>
+										<AirportCode>CDG</AirportCode>
+										<Date>2017-08-29</Date>
+									</Departure>
+									<Arrival>
+										<AirportCode>BCN</AirportCode>
+									</Arrival>
+									<MarketingCarrier>
+										<AirlineID>C9</AirlineID>
+										<FlightNumber>OPEN</FlightNumber>
+									</MarketingCarrier>
+								</Flight>
+							</OriginDestination>
+						</FlightItem>
+					</OrderItem>
+				</OrderItems>
+				<Preference>
+					<CabinPreferences>
+						<CabinType>
+							<Code>M</Code>
+						</CabinType>
+					</CabinPreferences>
+				</Preference>
+			</Actions>
+			<Actions>
+				<ActionType Context="Segment">Delete</ActionType>
+				<OrderID Owner="C9">D12XK5</OrderID>
+				<OrderItems>
+					<OrderItem>
+						<OrderItemID Owner="C9">ORDERITEM1</OrderItemID>
+					</OrderItem>
+				</OrderItems>
+			</Actions>
+		</Reshop>
+	</Query>
+</ItinReshopRQ>

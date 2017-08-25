@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SeatAvailabilityRQ xmlns="http://www.iata.org/IATA/EDIST" EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-12-10T12:39:00Z" Version="IATA2016.2" Target="Test" PrimaryLangID="en" AltLangID="en" RetransmissionIndicator="false" AsynchronousAllowedInd="false" TransactionIdentifier="a" SequenceNmbr="201" >
+<SeatAvailabilityRQ EchoToken="{{$guid}}" Version="IATA2016.2" xmlns="http://www.iata.org/IATA/EDIST">
 	<Document>
-		<Name>JRT NDC GATEWAY</Name>
 		<ReferenceVersion>1.0</ReferenceVersion>
 	</Document>
 	<Party>
@@ -33,15 +32,15 @@
 	<DataLists>
 		<FlightSegmentList>
 			<FlightSegment SegmentKey="SEG1">
-				 <Departure>
+				<Departure>
                     <AirportCode>LHR</AirportCode>
-                    <Date>2017-08-22</Date>
+                    <Date>2017-08-29</Date>
                     <Time>08:00</Time>
                     <AirportName>Heathrow Airport</AirportName>
                 </Departure>
                 <Arrival>
                     <AirportCode>BCN</AirportCode>
-                    <Date>2017-08-22</Date>
+                    <Date>2017-08-29</Date>
                     <Time>10:59</Time>
                     <AirportName>Barcelona–El Prat Airport</AirportName>
                 </Arrival>
